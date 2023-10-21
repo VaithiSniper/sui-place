@@ -31,7 +31,7 @@ p {
 
 .NavigationMenuTrigger,
 .NavigationMenuLink {
-  padding: 8px 12px;
+  padding: 12px 12px;
   outline: none;
   user-select: none;
   font-weight: 500;
