@@ -22,7 +22,7 @@ export default function Home() {
       <SuiClientProvider networks={networks} defaultNetwork="devnet">
         <WalletProvider>
           <>
-            <Navbar />
+            <Navbar isPlace={true} />
           </>
           <>
             <div className="grid grid-cols-8 gap-4 gap-x-12 py-32 my-16 h-4">
