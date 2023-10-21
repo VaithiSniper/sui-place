@@ -5,6 +5,8 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { CaretDownIcon } from '@radix-ui/react-icons';
 import './styles.css';
 import { ConnectButton, useCurrentWallet } from '@mysten/dapp-kit';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const NavigationMenuDemo = (props: { isPlace: Boolean }) => {
 
@@ -32,38 +34,44 @@ const NavigationMenuDemo = (props: { isPlace: Boolean }) => {
               <li style={{ gridRow: 'span 3' }}>
                 <NavigationMenu.Link asChild>
                   <a className="Callout" href="/">
-                    <svg aria-hidden width="38" height="38" viewBox="0 0 25 25" fill="white">
-                      <path d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"></path>
-                      <path d="M12 0H4V8H12V0Z"></path>
-                      <path d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"></path>
-                    </svg>
-                    <div className="CalloutHeading">Radix Primitives</div>
-                    <p className="CalloutText">Unstyled, accessible components for React.</p>
+                  <Image height={40} width={40} src="/images/bridge/logo.png" alt="Wormhole Logo"></Image>
+                    <div className="CalloutHeading">The Bible</div>
+                    <p className="CalloutText">Learn and Earn on the go.</p>
                   </a>
                 </NavigationMenu.Link>
               </li>
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
+              <ListItem title="Rules" content="Veni. Vidi. Vici." mainlink="learn" sublink="rules" />
+              <ListItem title="Actors" content="Would buy or sell?" mainlink="learn" sublink="actors"/>
+              <ListItem title="Inception" content="Why did we build it?" mainlink="learn" sublink="inception"/>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item className='p-2 text-blue'>
           <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Overview <CaretDownIcon className="CaretDown" aria-hidden />
+            Bridge <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
-            <ul className="List two">
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
-              <li>Dummy</li>
-              Build high-quality, accessible design systems and web apps.
+          <ul className="List one">
+              <li style={{ gridRow: 'span 3' }}>
+                <NavigationMenu.Link asChild>
+                  <a className="Callout" href="/bridge/wormhole">
+                    <Image height={40} width={40} src="/images/bridge/wormhole.png" alt="Wormhole Logo"></Image>
+                    <div className="CalloutHeading">Wormhole</div>
+                    <p className="CalloutText">Cross-chain portal to transfer assets</p>
+                  </a>
+                </NavigationMenu.Link>
+              </li>
+              <li style={{ gridRow: 'span 3' }}>
+                <NavigationMenu.Link asChild>
+                  <a className="Callout" href="/bridge/router">
+                    <Image height={40} width={40} src="/images/bridge/router.jpeg" alt="Wormhole Logo" className='gap-y-0 space-y-0 top-0 py-0'>
+                    </Image>
+                    <div className="CalloutHeading">Router</div>
+                    <p className="CalloutText">Cheap and fast EVM bridges</p>
+                  </a>
+                </NavigationMenu.Link>
+              </li>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
@@ -89,6 +97,18 @@ const NavigationMenuDemo = (props: { isPlace: Boolean }) => {
     </NavigationMenu.Root >
   );
 };
+
+const ListItem = (props: any) => (
+  <li>
+    <Link href={`/${props.mainlink}/${props.sublink}`}>
+    <div>
+      <div className='text-xl font-bold font-heading my-0.5'>{props.title}</div>
+      <div className='text-sm font-light font-sub tracking-light'>{props.content}</div>
+    </div>
+    </Link>
+    
+  </li>
+)
 
 // const ListItem = React.forwardRef((ListItemObj, forwardedRef) => (
 //   <li>
