@@ -14,18 +14,12 @@ export default function Home() {
         <span className="text-banner text-blue font-heading font-bold py-2">
           Router
         </span>
-        <div className="font-reddit tracking-wide text-xl  w-full col-start-2 col-end-4 justify-center">
+        <div className="font-reddit tracking-wide text-xl  w-full col-start-2 col-end-4 justify-center gap-x-12 space-x-12 justify-center items-center text-center">
           <span className="text-white">
-            Buy. &nbsp;
+            <Image src="/images/router/polygon.png" height={50} width={50} alt='Sui' className='inline' />
           </span>
           <span className="text-blue">
-            Conquer. &nbsp;
-          </span>
-          <span className="text-white">
-            Grow. &nbsp;
-          </span>
-          <span className="text-blue">
-            As a team. &nbsp;
+            <Image src="https://ethereum.org/static/eth-diamond-rainbow.svg" height={50} width={50} alt='Sui' className='inline' />
           </span>
         </div>
         <div className="flex flex-col items-center my-10 py-10">
