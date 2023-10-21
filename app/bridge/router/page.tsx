@@ -14,43 +14,13 @@ export default function Home() {
         <span className="text-banner text-blue font-heading font-bold py-2">
           Router
         </span>
-        <div className="font-reddit tracking-wide text-xl  w-full col-start-2 col-end-4 justify-center">
+        <div className="font-reddit tracking-wide text-xl  w-full col-start-2 col-end-4 justify-center gap-x-12 space-x-12 justify-center items-center text-center">
           <span className="text-white">
-            Buy. &nbsp;
+            <Image src="/images/router/polygon.png" height={50} width={50} alt='Sui' className='inline' />
           </span>
           <span className="text-blue">
-            Conquer. &nbsp;
+            <Image src="https://ethereum.org/static/eth-diamond-rainbow.svg" height={50} width={50} alt='Sui' className='inline' />
           </span>
-          <span className="text-white">
-            Grow. &nbsp;
-          </span>
-          <span className="text-blue">
-            As a team. &nbsp;
-          </span>
-        </div>
-        <div className="flex flex-col items-center my-10 py-10">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              router.push("/place");
-            }}
-            type="button"
-            style={{
-              boxShadow: "0px 0px 0px 3px rgba(178,146,85,0.7)",
-            }}
-            className="glow-buttonblue flex items-center p-4 transition ease-in duration-200 uppercase rounded-full hover:bg-buttonblue hover:text-grey hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border border-cyan-900 focus:outline-none bg-white text-black gap-x-2 font-reddit"
-          >
-            Launch App
-            <Image
-              height={20}
-              width={20}
-              src="/images/sui_dark.svg"
-              alt="Wallet"
-              className={
-                "rounded-full border-blue justify-center text-center items-center"
-              }
-            />
-          </button>
         </div>
       </div>
       <div className="w-full col-start-5 col-end-8 h-full p-0 m-0">
