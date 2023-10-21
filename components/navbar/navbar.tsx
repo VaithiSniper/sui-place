@@ -6,14 +6,18 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 import './styles.css';
 import { ConnectButton, useCurrentWallet } from '@mysten/dapp-kit';
 
-const NavigationMenuDemo = () => {
+const NavigationMenuDemo = (props: { isPlace: Boolean }) => {
 
-  const accounts = useCurrentWallet();
-  if (accounts == null) {
-    console.log("You are not connected!")
-  }
-  else {
-    console.log(accounts)
+  const isPlace: Boolean = props.isPlace
+
+  if (isPlace) {
+    const accounts = useCurrentWallet();
+    if (accounts == null) {
+      console.log("You are not connected!")
+    }
+    else {
+      console.log(accounts)
+    }
   }
 
   return (
@@ -63,11 +67,17 @@ const NavigationMenuDemo = () => {
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-
-        <NavigationMenu.Item className='p-1'>
-          <ConnectButton style={{ color: "#4CA2FF" }} />
-        </NavigationMenu.Item>
-
+        {
+          isPlace ? (
+            <NavigationMenu.Item className='p-1'>
+              <ConnectButton style={{ color: "#4CA2FF" }} />
+            </NavigationMenu.Item>
+          )
+            :
+            (
+              null
+            )
+        }
         <NavigationMenu.Indicator className="NavigationMenuIndicator">
           <div className="Arrow" />
         </NavigationMenu.Indicator>
@@ -76,7 +86,7 @@ const NavigationMenuDemo = () => {
       <div className="ViewportPosition">
         <NavigationMenu.Viewport className="NavigationMenuViewport" />
       </div>
-    </NavigationMenu.Root>
+    </NavigationMenu.Root >
   );
 };
 
