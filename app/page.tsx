@@ -53,9 +53,9 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="w-full col-start-5 col-end-8 h-full p-0 m-0">
-        <Image src={"/images/minesweeper.png"} height={100} width={900} alt={"minesweeper"} />
-      </div>
+        <div className="w-full col-start-5 col-end-8 h-full p-0 m-0">
+          <Image src={"/images/minesweeper.png"} height={100} width={900} alt={"minesweeper"} />
+        </div>
     </div >
   )
 }

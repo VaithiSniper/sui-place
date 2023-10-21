@@ -1,0 +1,85 @@
+.page-container {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.left-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-content {
+  width: 45%;
+  text-align: left;
+  padding: 10px;
+}
+
+img {
+  width: 400px;
+  margin-left: 10px;
+}
+
+.text-3xl {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff3f3f; /* Red */
+}
+
+.text-banner {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff3f3f, #ff883f); /* Stylish gradient background */
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 10px 0;
+}
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+.right-content {
+  width: 45%;
+  text-align: left;
+  font-family: 'Garmond', sans-serif;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2); /* Translucent white background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.right-content span {
+  font-size: 24px;
+  font-family: 'Garmond';
+  font-weight: bold;
+  color: #ff3f3f; /* Red */
+}
+
+.right-content p {
+  font-size: 18px;
+  font-family: 'Garmond';
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #ccc; /* Light gray */
+  text-align: justify; /* Justify text for a cleaner look */
+}

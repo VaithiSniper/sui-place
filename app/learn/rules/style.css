@@ -1,0 +1,75 @@
+/* Style for the "Sell" box */
+.sell {
+    background-color: #353935; /* Red shade */
+    color: white; /* Text color */
+  }
+  
+  /* Style for the "Buy" box */
+  .buy {
+    background-color: #000000; /* Green shade */
+    color: white; /* Text color */
+  }
+  .third{
+    background-color: #343434;
+    color: white;
+  }
+  .onyx{
+    background-color: #000010;
+    color: white;
+  }
+  
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .image-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 100px; /* Adjust the width as needed */
+    margin-left: 100px;
+    max-width: 500%; /* Make the image responsive to its container */
+    height: 200px;
+    width: 400px; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space around the image */
+    margin: 0 auto; /* Center the image horizontally */
+    max-height: 300px;
+  }
+  
+  .block-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .block {
+    width: 48%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .block-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .block-content {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Add more styles as needed */
