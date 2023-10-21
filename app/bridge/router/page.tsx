@@ -22,30 +22,6 @@ export default function Home() {
             <Image src="https://ethereum.org/static/eth-diamond-rainbow.svg" height={50} width={50} alt='Sui' className='inline' />
           </span>
         </div>
-        <div className="flex flex-col items-center my-10 py-10">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              router.push("/place");
-            }}
-            type="button"
-            style={{
-              boxShadow: "0px 0px 0px 3px rgba(178,146,85,0.7)",
-            }}
-            className="glow-buttonblue flex items-center p-4 transition ease-in duration-200 uppercase rounded-full hover:bg-buttonblue hover:text-grey hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border border-cyan-900 focus:outline-none bg-white text-black gap-x-2 font-reddit"
-          >
-            Launch App
-            <Image
-              height={20}
-              width={20}
-              src="/images/sui_dark.svg"
-              alt="Wallet"
-              className={
-                "rounded-full border-blue justify-center text-center items-center"
-              }
-            />
-          </button>
-        </div>
       </div>
       <div className="w-full col-start-5 col-end-8 h-full p-0 m-0">
         <Image src={"/images/minesweeper.png"} height={100} width={900} alt={"minesweeper"} />
