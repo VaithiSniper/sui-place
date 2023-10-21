@@ -2,8 +2,8 @@ import { Box } from "@radix-ui/themes";
 
 export function Tile(props: any) {
   return (
-    <Box width="9" height="9">
-      <div className={`w-4 h-4 bg-${props.color}-500`} >
+    <Box width="4" height="4" className="inline">
+      <div className={`w-10 h-10 bg-${props.color}`} >
       </div>
     </Box>
   )
